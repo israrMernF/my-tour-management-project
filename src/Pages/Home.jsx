@@ -5,6 +5,7 @@ import Features from '../Components/Features'
 import Gallery from '../Components/Gallery'
 import Banner from '../Components/Banner'
 import Contact from '../Components/Contact'
+import Footer from '../Components/Footer'
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
      <Gallery/>
      <Banner/>
      <Contact/>
+     <Footer/>
     </>
   )
 }

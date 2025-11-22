@@ -11,14 +11,11 @@ function Navbar() {
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-black bg-opacity-30 shadow-md transition-all">
       <div className="max-w-7xl mx-auto px-5 flex justify-between items-center py-4">
-        {/* Logo */}
         <Link to='/'>
           <h1 className="text-3xl font-extrabold text-white">
             Trip<span className="text-red-500">Buddy</span>
           </h1>
         </Link>
-
-        {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-10">
           <ul className="flex gap-8 text-white font-semibold text-lg">
             <li><Link to="/" className="hover:text-red-500 transition">Home</Link></li>
@@ -31,8 +28,6 @@ function Navbar() {
             Book Now
           </button>
         </nav>
-
-        {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             <svg
@@ -52,8 +47,6 @@ function Navbar() {
           </button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
       {isOpen && (
         <nav className="md:hidden bg-black bg-opacity-95 text-white px-5 py-5">
           <ul className="flex flex-col gap-6 font-semibold text-lg">
