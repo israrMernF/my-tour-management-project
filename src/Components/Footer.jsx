@@ -8,13 +8,12 @@ export default function Footer() {
 
     return (
         <footer
-            className="relative w-full text-white overflow-hidden"
+            className="relative w-full text-white overflow-hidden" 
             style={{
                 backgroundImage: backgroundImage,
-                backgroundSize: 'contain',
+                backgroundSize: 'cover',
                 backgroundPosition: 'bottom center',
                 backgroundRepeat: 'no-repeat',
-                backgroundColor: '#000000',
             }}
         >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-8 md:pt-24 md:pb-12 relative z-10">
@@ -61,15 +60,20 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-16 pt-8 border-t border-gray-700 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
-                    <p className="order-2 md:order-1 mt-4 md:mt-0">
+
+                <div className="mt-16 pt-8 border-t border-gray-700 flex flex-col items-center justify-center text-sm text-gray-400">
+                    <p className="order-2 text-center mt-4 md:mt-0">
                         &copy; {new Date().getFullYear()} TripBuddy. All rights reserved.
                     </p>
-                    <a href="#top" className="order-1 md:order-2 w-10 h-10 bg-red-500 hover:bg-red-600 transition duration-300 rounded-full flex items-center justify-center text-white shadow-lg">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
-                    </a>
                 </div>
             </div>
+            <a
+                href="#top"
+                className="absolute right-4 bottom-4 md:right-8 md:bottom-8 w-10 h-10 bg-red-500 hover:bg-red-600 transition duration-300 rounded-full flex items-center justify-center text-white shadow-lg z-20"
+                aria-label="Go to top"
+            >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+            </a>
         </footer>
     );
 }

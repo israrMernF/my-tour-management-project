@@ -6,6 +6,7 @@ import Tours from './Pages/Tours'
 import Gallery from './Pages/Gallery'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Footer from './Components/Footer'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Tours />
+        <Footer />
       </>
     ),
   },
@@ -32,6 +34,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Gallery />
+        <Footer />
       </>
     ),
   },
@@ -41,6 +44,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <About />
+        <Footer />
       </>
     ),
   },
@@ -50,6 +54,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Contact />
+        <Footer />
       </>
     ),
   },

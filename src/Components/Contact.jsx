@@ -15,7 +15,7 @@ const Contact = () => {
                             alt="Get in Touch Illustration" 
                             width={600}
                             height={400}
-                            className="w-full h-auto object-contain"
+                            className="w-full h-auto object-contain rounded-xl shadow-2xl"
                         />
                     </div>
                     <div className="p-4 md:p-8">
@@ -32,7 +32,7 @@ const Contact = () => {
                                     type="text"
                                     id="name"
                                     placeholder="Enter your name"
-                                    className="w-full p-3 border border-gray-300 rounded-md bg-black text-white placeholder-gray-400 focus:ring-red-500 focus:border-red-500"
+                                    className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-900 placeholder-gray-500 shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                                 />
                             </div>
                             <div>
@@ -43,7 +43,7 @@ const Contact = () => {
                                     type="email"
                                     id="email"
                                     placeholder="Enter your email"
-                                    className="w-full p-3 border border-gray-300 rounded-md bg-black text-white placeholder-gray-400 focus:ring-red-500 focus:border-red-500"
+                                    className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-900 placeholder-gray-500 shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                                 />
                             </div>
                             <div>
@@ -54,13 +54,13 @@ const Contact = () => {
                                     id="message"
                                     rows="5"
                                     placeholder="Enter your message"
-                                    className="w-full p-3 border border-gray-300 rounded-md bg-black text-white placeholder-gray-400 focus:ring-red-500 focus:border-red-500 resize-none"
+                                    className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-900 placeholder-gray-500 shadow-sm focus:ring-red-500 focus:border-red-500 resize-none transition duration-150"
                                 ></textarea>
                             </div>
                             <button
                                 type="submit"
                                 className="w-full px-4 py-3 bg-red-500 text-white font-bold text-lg rounded-md 
-                                           transition-colors duration-300 hover:bg-red-600 shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+                                        transition-colors duration-300 hover:bg-red-600 shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
                             >
                                 Send Message
                             </button>

@@ -19,7 +19,7 @@ function Navbar() {
         <nav className="hidden md:flex items-center gap-10">
           <ul className="flex gap-8 text-white font-semibold text-lg">
             <li><Link to="/" className="hover:text-red-500 transition">Home</Link></li>
-            <li><Link to="/about" className="hover:text-red-500 transition">About</Link></li>
+            <li><Link to="/about" className="hover:text-red-500 transition">About Us</Link></li>
             <li><Link to="/tours" className="hover:text-red-500 transition">Tours</Link></li>
             <li><Link to="/gallery" className="hover:text-red-500 transition">Gallery</Link></li>
             <li><Link to="/contact" className="hover:text-red-500 transition">Contact</Link></li>
